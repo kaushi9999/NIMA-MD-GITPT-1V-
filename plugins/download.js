@@ -1,1 +1,319 @@
-const _0x336e0b=_0x4719;function _0x4719(_0x1094c3,_0x495856){const _0x45b54a=_0x45b5();return _0x4719=function(_0x4719df,_0x2188e6){_0x4719df=_0x4719df-0x1d6;let _0x332dad=_0x45b54a[_0x4719df];return _0x332dad;},_0x4719(_0x1094c3,_0x495856);}(function(_0x17add4,_0x52bfc0){const _0x1f15d4=_0x4719,_0x2f45e4=_0x17add4();while(!![]){try{const _0x5c13aa=-parseInt(_0x1f15d4(0x214))/0x1+parseInt(_0x1f15d4(0x201))/0x2*(-parseInt(_0x1f15d4(0x213))/0x3)+-parseInt(_0x1f15d4(0x1e5))/0x4*(parseInt(_0x1f15d4(0x1d8))/0x5)+parseInt(_0x1f15d4(0x1f6))/0x6*(parseInt(_0x1f15d4(0x220))/0x7)+-parseInt(_0x1f15d4(0x203))/0x8*(parseInt(_0x1f15d4(0x1fb))/0x9)+parseInt(_0x1f15d4(0x20f))/0xa+parseInt(_0x1f15d4(0x22a))/0xb;if(_0x5c13aa===_0x52bfc0)break;else _0x2f45e4['push'](_0x2f45e4['shift']());}catch(_0x312dff){_0x2f45e4['push'](_0x2f45e4['shift']());}}}(_0x45b5,0x91345));const {fetchJson}=require(_0x336e0b(0x20b)),{downloadTiktok}=require(_0x336e0b(0x1f3)),{facebook}=require(_0x336e0b(0x1e3)),cheerio=require('cheerio'),{igdl}=require(_0x336e0b(0x20a)),axios=require(_0x336e0b(0x209)),{cmd,commands}=require(_0x336e0b(0x221));function _0x45b5(){const _0x1384e1=['Download\x20APK\x20from\x20Aptoide.','sendMessage','https://','status','⚠️\x20Failed\x20to\x20retrieve\x20Twitter\x20video.\x20Please\x20check\x20the\x20link\x20and\x20try\x20again.','path_alt','\x0a╰━━━━━━━━━━━━━━━┈⊷\x0a🔗\x20*POWERED\x20BY\x20LOKU NIMA-MD*','@mrnima/tiktok-downloader','╰━━━⪼\x0a\x0a','┃▸\x20*Description:*\x20','11274lItYko','key','package','🎵\x20*Audio\x20Options:*\x0a','3️⃣\x20\x20*Audio*\x0a','7974shBvXh','downloadUrl','error','message','messages.upsert','Download\x20Twitter\x20videos','2xnFUMG','*©\x20POWERED\x20BY\x20LOKU NIMA-MD*','10576pajPIY','⚠️\x20No\x20download\x20URL\x20found.\x20Please\x20check\x20the\x20link\x20and\x20try\x20again.','contextInfo','\x0a┃\x20📅\x20*Updated\x20On:*\x20','application/vnd.android.package-archive','/limit=1','axios','ruhend-scraper','../lib/functions','audio/mp4','4️⃣\x20\x20*Document*\x0a','╭━━━〔\x20*APK\x20Downloader*\x20〕━━━┈⊷\x0a┃\x20📦\x20*Name:*\x20','2679340hhqLkF','https://www.dark-yasiya-api.site/download/twitter?url=','data','❌\x20Please\x20provide\x20a\x20valid\x20Twitter\x20URL.','2141847Qcgphp','137480qguKkv','get','twitter','apk','❌\x20An\x20error\x20occurred\x20while\x20fetching\x20the\x20APK.\x20Please\x20try\x20again.','Twitter_Audio.mp3','https://api.fgmods.xyz/api/downloader/gdrive?url=','Error:','📥\x20*Downloaded\x20in\x20HD\x20Quality*','audio/mpeg','mimetype','❌\x20An\x20error\x20occurred\x20while\x20fetching\x20the\x20Google\x20Drive\x20file.\x20Please\x20try\x20again.','3045XwepDJ','../command','extendedTextMessage','2️⃣\x20\x20*HD\x20Quality*\x0a','\x0a┃\x20🏋\x20*Size:*\x20','📹\x20*Download\x20Options:*\x0a','❌\x20Please\x20provide\x20an\x20app\x20name\x20to\x20search.','download','❌\x20Invalid\x20option!\x20Please\x20reply\x20with\x201,\x202,\x203,\x204,\x20or\x205.','size','19946553pRDOdR','remoteJid','list','\x20MB\x0a┃\x20📦\x20*Package:*\x20','&apikey=mnp3grlZ','result','1555fQsEgS','❌\x20Please\x20provide\x20a\x20valid\x20Google\x20Drive\x20link.','No\x20description','conversation','name','toFixed','Download\x20Google\x20Drive\x20files.','fileName','1️⃣\x20\x20*SD\x20Quality*\x0a','📥\x20*Downloaded\x20in\x20SD\x20Quality*','messages','@mrnima/facebook-downloader','developer','3616eQxmYC','datalist','5️⃣\x20\x20*Voice*\x0a\x0a','file','📥\x20*Audio\x20Downloaded\x20as\x20Document*','╭━━━〔\x20*TWITTER\x20DOWNLOADER*\x20〕━━━⊷\x0a','📌\x20*Reply\x20with\x20the\x20number\x20to\x20download\x20your\x20choice.*'];_0x45b5=function(){return _0x1384e1;};return _0x45b5();}cmd({'pattern':_0x336e0b(0x216),'alias':['tweet','twdl'],'desc':_0x336e0b(0x200),'category':_0x336e0b(0x227),'filename':__filename},async(_0x5f5049,_0x1b68a1,_0x51f8,{from:_0x59c750,quoted:_0x320ff3,q:_0x50f1a6,reply:_0x2dfa98})=>{const _0x4551da=_0x336e0b;try{if(!_0x50f1a6||!_0x50f1a6['startsWith'](_0x4551da(0x1ee)))return _0x5f5049[_0x4551da(0x1ed)](_0x59c750,{'text':_0x4551da(0x212)},{'quoted':_0x1b68a1});await _0x5f5049[_0x4551da(0x1ed)](_0x59c750,{'react':{'text':'⏳','key':_0x1b68a1['key']}});const _0x598c9a=await axios[_0x4551da(0x215)](_0x4551da(0x210)+_0x50f1a6),_0x41bc3d=_0x598c9a['data'];if(!_0x41bc3d||!_0x41bc3d[_0x4551da(0x1ef)]||!_0x41bc3d[_0x4551da(0x1d7)])return _0x2dfa98(_0x4551da(0x1f0));const {desc:_0x5dbf5f,thumb:_0x383b81,video_sd:_0x3e8db7,video_hd:_0x30b8df}=_0x41bc3d[_0x4551da(0x1d7)],_0x2f26fb=_0x4551da(0x1ea)+(_0x4551da(0x1f5)+(_0x5dbf5f||_0x4551da(0x1da))+'\x0a')+_0x4551da(0x1f4)+_0x4551da(0x225)+_0x4551da(0x1e0)+_0x4551da(0x223)+_0x4551da(0x1f9)+_0x4551da(0x1fa)+_0x4551da(0x20d)+_0x4551da(0x1e7)+_0x4551da(0x1eb),_0x5349ff=await _0x5f5049[_0x4551da(0x1ed)](_0x59c750,{'image':{'url':_0x383b81},'caption':_0x2f26fb},{'quoted':_0x1b68a1}),_0x3af45e=_0x5349ff['key']['id'];_0x5f5049['ev']['on'](_0x4551da(0x1ff),async _0x248e8c=>{const _0x3e2d8f=_0x4551da,_0x1fd05a=_0x248e8c[_0x3e2d8f(0x1e2)][0x0];if(!_0x1fd05a[_0x3e2d8f(0x1fe)])return;const _0x297b98=_0x1fd05a['message'][_0x3e2d8f(0x1db)]||_0x1fd05a[_0x3e2d8f(0x1fe)]['extendedTextMessage']?.['text'],_0x3454a8=_0x1fd05a[_0x3e2d8f(0x1f7)][_0x3e2d8f(0x22b)],_0x3366ef=_0x1fd05a[_0x3e2d8f(0x1fe)][_0x3e2d8f(0x222)]?.[_0x3e2d8f(0x205)]?.['stanzaId']===_0x3af45e;if(_0x3366ef){await _0x5f5049[_0x3e2d8f(0x1ed)](_0x3454a8,{'react':{'text':'⬇️','key':_0x1fd05a[_0x3e2d8f(0x1f7)]}});switch(_0x297b98){case'1':await _0x5f5049[_0x3e2d8f(0x1ed)](_0x3454a8,{'video':{'url':_0x3e8db7},'caption':_0x3e2d8f(0x1e1)},{'quoted':_0x1fd05a});break;case'2':await _0x5f5049[_0x3e2d8f(0x1ed)](_0x3454a8,{'video':{'url':_0x30b8df},'caption':_0x3e2d8f(0x21c)},{'quoted':_0x1fd05a});break;case'3':await _0x5f5049['sendMessage'](_0x3454a8,{'audio':{'url':_0x3e8db7},'mimetype':'audio/mpeg'},{'quoted':_0x1fd05a});break;case'4':await _0x5f5049['sendMessage'](_0x3454a8,{'document':{'url':_0x3e8db7},'mimetype':_0x3e2d8f(0x21d),'fileName':_0x3e2d8f(0x219),'caption':_0x3e2d8f(0x1e9)},{'quoted':_0x1fd05a});break;case'5':await _0x5f5049[_0x3e2d8f(0x1ed)](_0x3454a8,{'audio':{'url':_0x3e8db7},'mimetype':_0x3e2d8f(0x20c),'ptt':!![]},{'quoted':_0x1fd05a});break;default:_0x2dfa98(_0x3e2d8f(0x228));}}});}catch(_0x24b1e7){console[_0x4551da(0x1fd)](_0x4551da(0x21b),_0x24b1e7),_0x2dfa98('❌\x20An\x20error\x20occurred\x20while\x20processing\x20your\x20request.\x20Please\x20try\x20again.');}}),cmd({'pattern':_0x336e0b(0x217),'desc':_0x336e0b(0x1ec),'category':_0x336e0b(0x227),'filename':__filename},async(_0xcff8bc,_0x4bdb3b,_0x421678,{from:_0x4df21c,quoted:_0x4cd84a,q:_0x2f8108,reply:_0x5a9746})=>{const _0xca83ff=_0x336e0b;try{if(!_0x2f8108)return _0x5a9746(_0xca83ff(0x226));await _0xcff8bc['sendMessage'](_0x4df21c,{'react':{'text':'⏳','key':_0x4bdb3b['key']}});const _0x28b7da='http://ws75.aptoide.com/api/7/apps/search/query='+_0x2f8108+_0xca83ff(0x208),_0x4fa33=await axios[_0xca83ff(0x215)](_0x28b7da),_0x50c56e=_0x4fa33[_0xca83ff(0x211)];if(!_0x50c56e||!_0x50c56e['datalist']||!_0x50c56e['datalist'][_0xca83ff(0x22c)]['length'])return _0x5a9746('⚠️\x20No\x20results\x20found\x20for\x20the\x20given\x20app\x20name.');const _0x57d490=_0x50c56e[_0xca83ff(0x1e6)][_0xca83ff(0x22c)][0x0],_0x28322a=(_0x57d490[_0xca83ff(0x229)]/0x100000)[_0xca83ff(0x1dd)](0x2),_0xd03ae4=_0xca83ff(0x20e)+_0x57d490[_0xca83ff(0x1dc)]+_0xca83ff(0x224)+_0x28322a+_0xca83ff(0x22d)+_0x57d490[_0xca83ff(0x1f8)]+_0xca83ff(0x206)+_0x57d490['updated']+'\x0a┃\x20👨‍💻\x20*Developer:*\x20'+_0x57d490[_0xca83ff(0x1e4)][_0xca83ff(0x1dc)]+_0xca83ff(0x1f2);await _0xcff8bc['sendMessage'](_0x4df21c,{'react':{'text':'⬆️','key':_0x4bdb3b[_0xca83ff(0x1f7)]}}),await _0xcff8bc[_0xca83ff(0x1ed)](_0x4df21c,{'document':{'url':_0x57d490[_0xca83ff(0x1e8)][_0xca83ff(0x1f1)]},'fileName':_0x57d490[_0xca83ff(0x1dc)]+'.apk','mimetype':_0xca83ff(0x207),'caption':_0xd03ae4},{'quoted':_0x4bdb3b}),await _0xcff8bc[_0xca83ff(0x1ed)](_0x4df21c,{'react':{'text':'✅','key':_0x4bdb3b[_0xca83ff(0x1f7)]}});}catch(_0x1b9215){console[_0xca83ff(0x1fd)](_0xca83ff(0x21b),_0x1b9215),_0x5a9746(_0xca83ff(0x218));}}),cmd({'pattern':'gdrive','desc':_0x336e0b(0x1de),'react':'🌐','category':_0x336e0b(0x227),'filename':__filename},async(_0x13c999,_0x1557f0,_0x475a5d,{from:_0x182189,quoted:_0x514f36,q:_0x3c25c4,reply:_0x54b308})=>{const _0x1bde62=_0x336e0b;try{if(!_0x3c25c4)return _0x54b308(_0x1bde62(0x1d9));await _0x13c999['sendMessage'](_0x182189,{'react':{'text':'⬇️','key':_0x1557f0[_0x1bde62(0x1f7)]}});const _0x17896d=_0x1bde62(0x21a)+_0x3c25c4+_0x1bde62(0x1d6),_0x10ba5=await axios['get'](_0x17896d),_0x121ef2=_0x10ba5[_0x1bde62(0x211)][_0x1bde62(0x1d7)][_0x1bde62(0x1fc)];if(_0x121ef2)await _0x13c999[_0x1bde62(0x1ed)](_0x182189,{'react':{'text':'⬆️','key':_0x1557f0[_0x1bde62(0x1f7)]}}),await _0x13c999[_0x1bde62(0x1ed)](_0x182189,{'document':{'url':_0x121ef2},'mimetype':_0x10ba5[_0x1bde62(0x211)]['result'][_0x1bde62(0x21e)],'fileName':_0x10ba5[_0x1bde62(0x211)][_0x1bde62(0x1d7)][_0x1bde62(0x1df)],'caption':_0x1bde62(0x202)},{'quoted':_0x1557f0}),await _0x13c999[_0x1bde62(0x1ed)](_0x182189,{'react':{'text':'✅','key':_0x1557f0['key']}});else return _0x54b308(_0x1bde62(0x204));}catch(_0x9119f2){console['error']('Error:',_0x9119f2),_0x54b308(_0x1bde62(0x21f));}});
+const { fetchJson } = require("../lib/functions");
+const { downloadTiktok } = require("@mrnima/tiktok-downloader");
+const { facebook } = require("@mrnima/facebook-downloader");
+const cheerio = require("cheerio");
+const { igdl } = require("ruhend-scraper");
+const axios = require("axios");
+const { cmd, commands } = require('../command');
+
+cmd({
+  pattern: "ig",
+  alias: ["insta", "Instagram"],
+  desc: "To download Instagram videos.",
+  react: "🎥",
+  category: "download",
+  filename: __filename
+}, async (conn, m, store, { from, q, reply }) => {
+  try {
+    if (!q || !q.startsWith("http")) {
+      return reply("❌ Please provide a valid Instagram link.");
+    }
+
+    await conn.sendMessage(from, {
+      react: { text: "⏳", key: m.key }
+    });
+
+    const response = await axios.get(`https://api.davidcyriltech.my.id/instagram?url=${q}`);
+    const data = response.data;
+
+    if (!data || data.status !== 200 || !data.downloadUrl) {
+      return reply("⚠️ Failed to fetch Instagram video. Please check the link and try again.");
+    }
+
+    await conn.sendMessage(from, {
+      video: { url: data.downloadUrl },
+      mimetype: "video/mp4",
+      caption: "📥 *Instagram Video Downloaded Successfully!*"
+    }, { quoted: m });
+
+  } catch (error) {
+    console.error("Error:", error);
+    reply("❌ An error occurred while processing your request. Please try again.");
+  }
+});
+
+
+// twitter-dl
+
+cmd({
+  pattern: "twitter",
+  alias: ["tweet", "twdl"],
+  desc: "Download Twitter videos",
+  category: "download",
+  filename: __filename
+}, async (conn, m, store, {
+  from,
+  quoted,
+  q,
+  reply
+}) => {
+  try {
+    if (!q || !q.startsWith("https://")) {
+      return conn.sendMessage(from, { text: "❌ Please provide a valid Twitter URL." }, { quoted: m });
+    }
+
+    await conn.sendMessage(from, {
+      react: { text: '⏳', key: m.key }
+    });
+
+    const response = await axios.get(`https://www.dark-yasiya-api.site/download/twitter?url=${q}`);
+    const data = response.data;
+
+    if (!data || !data.status || !data.result) {
+      return reply("⚠️ Failed to retrieve Twitter video. Please check the link and try again.");
+    }
+
+    const { desc, thumb, video_sd, video_hd } = data.result;
+
+    const caption = `╭━━━〔 *TWITTER DOWNLOADER* 〕━━━⊷\n`
+      + `┃▸ *Description:* ${desc || "No description"}\n`
+      + `╰━━━⪼\n\n`
+      + `📹 *Download Options:*\n`
+      + `1️⃣  *SD Quality*\n`
+      + `2️⃣  *HD Quality*\n`
+      + `🎵 *Audio Options:*\n`
+      + `3️⃣  *Audio*\n`
+      + `4️⃣  *Document*\n`
+      + `5️⃣  *Voice*\n\n`
+      + `📌 *Reply with the number to download your choice.*`;
+
+    const sentMsg = await conn.sendMessage(from, {
+      image: { url: thumb },
+      caption: caption
+    }, { quoted: m });
+
+    const messageID = sentMsg.key.id;
+
+    conn.ev.on("messages.upsert", async (msgData) => {
+      const receivedMsg = msgData.messages[0];
+      if (!receivedMsg.message) return;
+
+      const receivedText = receivedMsg.message.conversation || receivedMsg.message.extendedTextMessage?.text;
+      const senderID = receivedMsg.key.remoteJid;
+      const isReplyToBot = receivedMsg.message.extendedTextMessage?.contextInfo?.stanzaId === messageID;
+
+      if (isReplyToBot) {
+        await conn.sendMessage(senderID, {
+          react: { text: '⬇️', key: receivedMsg.key }
+        });
+
+        switch (receivedText) {
+          case "1":
+            await conn.sendMessage(senderID, {
+              video: { url: video_sd },
+              caption: "📥 *Downloaded in SD Quality*"
+            }, { quoted: receivedMsg });
+            break;
+
+          case "2":
+            await conn.sendMessage(senderID, {
+              video: { url: video_hd },
+              caption: "📥 *Downloaded in HD Quality*"
+            }, { quoted: receivedMsg });
+            break;
+
+          case "3":
+            await conn.sendMessage(senderID, {
+              audio: { url: video_sd },
+              mimetype: "audio/mpeg"
+            }, { quoted: receivedMsg });
+            break;
+
+          case "4":
+            await conn.sendMessage(senderID, {
+              document: { url: video_sd },
+              mimetype: "audio/mpeg",
+              fileName: "Twitter_Audio.mp3",
+              caption: "📥 *Audio Downloaded as Document*"
+            }, { quoted: receivedMsg });
+            break;
+
+          case "5":
+            await conn.sendMessage(senderID, {
+              audio: { url: video_sd },
+              mimetype: "audio/mp4",
+              ptt: true
+            }, { quoted: receivedMsg });
+            break;
+
+          default:
+            reply("❌ Invalid option! Please reply with 1, 2, 3, 4, or 5.");
+        }
+      }
+    });
+
+  } catch (error) {
+    console.error("Error:", error);
+    reply("❌ An error occurred while processing your request. Please try again.");
+  }
+});
+
+// MediaFire-dl
+
+cmd({
+  pattern: "mediafire",
+  alias: ["mfire"],
+  desc: "To download MediaFire files.",
+  react: "🎥",
+  category: "download",
+  filename: __filename
+}, async (conn, m, store, {
+  from,
+  quoted,
+  q,
+  reply
+}) => {
+  try {
+    if (!q) {
+      return reply("❌ Please provide a valid MediaFire link.");
+    }
+
+    await conn.sendMessage(from, {
+      react: { text: "⏳", key: m.key }
+    });
+
+    const response = await axios.get(`https://www.dark-yasiya-api.site/download/mfire?url=${q}`);
+    const data = response.data;
+
+    if (!data || !data.status || !data.result || !data.result.dl_link) {
+      return reply("⚠️ Failed to fetch MediaFire download link. Ensure the link is valid and public.");
+    }
+
+    const { dl_link, fileName, fileType } = data.result;
+    const file_name = fileName || "mediafire_download";
+    const mime_type = fileType || "application/octet-stream";
+
+    await conn.sendMessage(from, {
+      react: { text: "⬆️", key: m.key }
+    });
+
+    const caption = `╭━━━〔 *MEDIAFIRE DOWNLOADER* 〕━━━⊷\n`
+      + `┃▸ *File Name:* ${file_name}\n`
+      + `┃▸ *File Type:* ${mime_type}\n`
+      + `╰━━━⪼\n\n`
+      + `📥 *Downloading your file...*`;
+
+    await conn.sendMessage(from, {
+      document: { url: dl_link },
+      mimetype: mime_type,
+      fileName: file_name,
+      caption: caption
+    }, { quoted: m });
+
+  } catch (error) {
+    console.error("Error:", error);
+    reply("❌ An error occurred while processing your request. Please try again.");
+  }
+});
+
+// apk-dl
+
+cmd({
+  pattern: "apk",
+  desc: "Download APK from Aptoide.",
+  category: "download",
+  filename: __filename
+}, async (conn, m, store, {
+  from,
+  quoted,
+  q,
+  reply
+}) => {
+  try {
+    if (!q) {
+      return reply("❌ Please provide an app name to search.");
+    }
+
+    await conn.sendMessage(from, { react: { text: "⏳", key: m.key } });
+
+    const apiUrl = `http://ws75.aptoide.com/api/7/apps/search/query=${q}/limit=1`;
+    const response = await axios.get(apiUrl);
+    const data = response.data;
+
+    if (!data || !data.datalist || !data.datalist.list.length) {
+      return reply("⚠️ No results found for the given app name.");
+    }
+
+    const app = data.datalist.list[0];
+    const appSize = (app.size / 1048576).toFixed(2); // Convert bytes to MB
+
+    const caption = `╭━━━〔 *APK Downloader* 〕━━━┈⊷
+┃ 📦 *Name:* ${app.name}
+┃ 🏋 *Size:* ${appSize} MB
+┃ 📦 *Package:* ${app.package}
+┃ 📅 *Updated On:* ${app.updated}
+┃ 👨‍💻 *Developer:* ${app.developer.name}
+╰━━━━━━━━━━━━━━━┈⊷
+🔗 *Powered By KhanX-AI*`;
+
+    await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
+
+    await conn.sendMessage(from, {
+      document: { url: app.file.path_alt },
+      fileName: `${app.name}.apk`,
+      mimetype: "application/vnd.android.package-archive",
+      caption: caption
+    }, { quoted: m });
+
+    await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
+
+  } catch (error) {
+    console.error("Error:", error);
+    reply("❌ An error occurred while fetching the APK. Please try again.");
+  }
+});
+
+// G-Drive-DL
+
+cmd({
+  pattern: "gdrive",
+  desc: "Download Google Drive files.",
+  react: "🌐",
+  category: "download",
+  filename: __filename
+}, async (conn, m, store, {
+  from,
+  quoted,
+  q,
+  reply
+}) => {
+  try {
+    if (!q) {
+      return reply("❌ Please provide a valid Google Drive link.");
+    }
+
+    await conn.sendMessage(from, { react: { text: "⬇️", key: m.key } });
+
+    const apiUrl = `https://api.fgmods.xyz/api/downloader/gdrive?url=${q}&apikey=mnp3grlZ`;
+    const response = await axios.get(apiUrl);
+    const downloadUrl = response.data.result.downloadUrl;
+
+    if (downloadUrl) {
+      await conn.sendMessage(from, { react: { text: "⬆️", key: m.key } });
+
+      await conn.sendMessage(from, {
+        document: { url: downloadUrl },
+        mimetype: response.data.result.mimetype,
+        fileName: response.data.result.fileName,
+        caption: "*© Powered By JawadTechX*"
+      }, { quoted: m });
+
+      await conn.sendMessage(from, { react: { text: "✅", key: m.key } });
+    } else {
+      return reply("⚠️ No download URL found. Please check the link and try again.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    reply("❌ An error occurred while fetching the Google Drive file. Please try again.");
+  }
+}); 

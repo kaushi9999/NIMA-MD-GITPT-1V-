@@ -1,55 +1,78 @@
 const axios = require('axios');
 const { cmd } = require('../command');
-const config = require('../config');
 
 cmd({
-    pattern: "movieinfo",
+    pattern: "movie",
     desc: "Fetch detailed information about a movie.",
     category: "utility",
-    react: "🎞️",
+    react: "🎬",
     filename: __filename
-}, async (conn, mek, m, { from, args, reply }) => {
+},
+async (conn, mek, m, { from, reply, sender, args }) => {
     try {
-        const movieName = args.join(' ');
-        if (!movieName) return reply("📽️ Please provide the name of the movie.");
+        // Properly extract the movie name from arguments
+        const movieName = args.length > 0 ? args.join(' ') : m.text.replace(/^[\.\#\$\!]?movie\s?/i, '').trim();
+        
+        if (!movieName) {
+            return reply("📽️ Please provide the name of the movie.\nExample: .movie Iron Man");
+        }
 
-        if (!config.OMDB_API_KEY) return reply("❌ OMDB API key not configured.");
-
-        const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(movieName)}&apikey=${config.OMDB_API_KEY}`;
+        const apiUrl = `https://apis.davidcyriltech.my.id/imdb?query=${encodeURIComponent(movieName)}`;
         const response = await axios.get(apiUrl);
-        const data = response.data;
 
-        if (!response || data.Response === "False") return reply("❌ Movie not found.");
+        if (!response.data.status || !response.data.movie) {
+            return reply("🚫 Movie not found. Please check the name and try again.");
+        }
 
-        const movieInfo = `
-*🎬 NIMA-MD-V1 MOVIE SEARCH 🎬*
+        const movie = response.data.movie;
+        
+        // Format the caption
+        const dec = `
+🎬 *${movie.title}* (${movie.year}) ${movie.rated || ''}
 
-*ᴛɪᴛʟᴇ:* ${data.Title}
-*ʏᴇᴀʀ:* ${data.Year}
-*ʀᴀᴛᴇᴅ:* ${data.Rated}
-*ʀᴇʟᴇᴀꜱᴇᴅ:* ${data.Released}
-*ʀᴜɴᴛɪᴍᴇ:* ${data.Runtime}
-*ɢᴇɴʀᴇ:* ${data.Genre}
-*ᴅɪʀᴇᴄᴛᴏʀ:* ${data.Director}
-*ᴡʀɪᴛᴇʀ:* ${data.Writer}
-*ᴀᴄᴛᴏʀꜱ:* ${data.Actors}
-*ʟᴀɴɢᴜᴀɢᴇ:* ${data.Language}
-*ᴄᴏᴜɴᴛʀʏ:* ${data.Country}
-*ᴀᴡᴀʀᴅꜱ:* ${data.Awards}
-*ɪᴍᴅʙ ʀᴀᴛɪɴɢ:* ${data.imdbRating}
-*ᴘʟᴏᴛ:* ${data.Plot}
+⭐ *IMDb:* ${movie.imdbRating || 'N/A'} | 🍅 *Rotten Tomatoes:* ${movie.ratings.find(r => r.source === 'Rotten Tomatoes')?.value || 'N/A'} | 💰 *Box Office:* ${movie.boxoffice || 'N/A'}
 
-> POWERED BY LOKU NIMA 1V
+📅 *Released:* ${new Date(movie.released).toLocaleDateString()}
+⏳ *Runtime:* ${movie.runtime}
+🎭 *Genre:* ${movie.genres}
+
+📝 *Plot:* ${movie.plot}
+
+🎥 *Director:* ${movie.director}
+✍️ *Writer:* ${movie.writer}
+🌟 *Actors:* ${movie.actors}
+
+🌍 *Country:* ${movie.country}
+🗣️ *Language:* ${movie.languages}
+🏆 *Awards:* ${movie.awards || 'None'}
+
+[View on IMDb](${movie.imdbUrl})
 `;
 
-        const imageUrl = (data.Poster && data.Poster !== 'N/A') ? data.Poster : config.ALIVE_IMG || 'https://i.imgur.com/placeholder.png';
+        // Send message with the requested format
+        await conn.sendMessage(
+            from,
+            {
+                image: { 
+                    url: movie.poster && movie.poster !== 'N/A' ? movie.poster : 'https://files.catbox.moe/7zfdcq.jpg'
+                },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363354023106228@newsletter',
+                        newsletterName: 'JawadTechX',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
 
-        await conn.sendMessage(from, {
-            image: { url: imageUrl },
-            caption: `${movieInfo}\n> CREATED BY LOKU NIMA`
-        }, { quoted: mek });
     } catch (e) {
-        console.error(e);
+        console.error('Movie command error:', e);
         reply(`❌ Error: ${e.message}`);
     }
 });

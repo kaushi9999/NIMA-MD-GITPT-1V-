@@ -1,42 +1,25 @@
-/*
-_  ______   _____ _____ _____ _   _
-| |/ / ___| |_   _| ____/___ | | | |
-| ' / |  _    | | |  _|| |   | |_| |
-| . \ |_| |   | | | |__| |___|  _  |
-|_|\_\____|   |_| |_____\____|_| |_|
-
-ANYWAY, YOU MUST GIVE CREDIT TO MY CODE WHEN COPY IT
-CONTACT ME HERE +237656520674
-YT: KermHackTools
-Github: Kgtech-cmr
-*/
-
-/*const { cmd } = require('../command');
+const { cmd } = require('../command');
+const config = require('../config');
 
 cmd({
     pattern: "owner",
-    react: "👑", // Reaction emoji when the command is triggered
-    alias: ["kerm"],
+    react: "✅", 
     desc: "Get owner number",
     category: "main",
     filename: __filename
 }, 
 async (conn, mek, m, { from }) => {
     try {
-        // Owner's contact info
-        const ownerNumber = '+237656520674'; // Replace this with the actual owner number
-        const ownerName = '༒𝐋𝐎𝐑𝐃 𝐊𝐄𝐑𝐌༒'; // Replace this with the owner's name
-        const organization = 'UD TEAM'; // Optional: replace with the owner's organization
+        const ownerNumber = config.OWNER_NUMBER; // Fetch owner number from config
+        const ownerName = config.OWNER_NAME;     // Fetch owner name from config
 
-        // Create a vCard (contact card) for the owner
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
-                      `FN:${ownerName}\n` +  // Full Name
-                      `ORG:${organization};\n` +  // Organization (Optional)
-                      `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` +  // WhatsApp ID and number
+                      `FN:${ownerName}\n` +  
+                      `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` + 
                       'END:VCARD';
 
-        // Send the vCard first
+        // Send the vCard
         const sentVCard = await conn.sendMessage(from, {
             contacts: {
                 displayName: ownerName,
@@ -44,70 +27,39 @@ async (conn, mek, m, { from }) => {
             }
         });
 
-        // Send a reply message that references the vCard
+        // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
-            text: `This is the owner's contact: ${ownerName}`,
+            image: { url: 'https://files.catbox.moe/149k8x.jpg' }, // Image URL from your request
+            caption: `╭━━〔 *KHAN-MD* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• *Here is the owner details*
+┃◈┃• *Name* - ${ownerName}
+┃◈┃• *Number* ${ownerNumber}
+┃◈┃• *Version*: 2.0.0 Beta
+┃◈└───────────┈⊷
+╰──────────────┈⊷
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Jᴀᴡᴀᴅ TᴇᴄʜX`, // Display the owner's details
             contextInfo: {
-                mentionedJid: [ownerNumber.replace('+237656520674') + '+923096287432@s.whatsapp.net'], // Mention the owner
-                quotedMessageId: sentVCard.key.id // Reference the vCard message
+                mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363354023106228@newsletter',
+                    newsletterName: 'JawadTechX',
+                    serverMessageId: 143
+                }            
             }
+        }, { quoted: mek });
+
+        // Send audio as per your request
+        await conn.sendMessage(from, {
+            audio: { url: 'https://github.com/XdTechPro/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' }, // Audio URL
+            mimetype: 'audio/mp4',
+            ptt: true
         }, { quoted: mek });
 
     } catch (error) {
         console.error(error);
-        await conn.sendMessage(from, { text: 'Sorry, there was an error fetching the owner contact.' }, { quoted: mek });
-    }
-});*/
-
-
-
-const { cmd } = require('../command');
-const config = require('../config');
-
-cmd({
-  pattern: "owner",
-  react: "👑", 
-  alias: ["LOKU NIMA"],
-  desc: "Get owner number",
-  category: "main",
-  filename: __filename
-}, async (conn, mek, m, { from }) => {
-  try {
-    // Propriétaires' informations de contact
-    const owners = [
-      { number: '+94769091078', name: '𝗡𝗜𝗠𝗔 𝗠𝗗 1', organization: '𝗡𝗜𝗠𝗔 𝗧𝗘𝗔𝗠' },
-      { number: '+94760743488', name: '𝗡𝗜𝗠𝗔 𝗠𝗗 2', organization: '𝗡𝗜𝗠𝗔 𝗧𝗘𝗔𝗠' }
-    ];
-
-    let contacts = [];
-    owners.forEach((owner) => {
-      const vcard = `BEGIN:VCDCARD\n` +
-        `VERSION:3.0\n` +
-        `FN:${owner.name}\n` +
-        `ORG:${owner.organization};\n` +
-        `TEL;type=CELL;type=VOICE;waid=${owner.number.replace('+', '')}:${owner.number}\n` +
-        `END:VCARD`;
-      contacts.push({ vcard });
-    });
-
-    // Envoyer les vCards
-    const sentVCard = await conn.sendMessage(from, { contacts: { displayName: "Propriétaires", contacts } });
-
-    // Mentionner les deux propriétaires
-    const mentionedJid = owners.map(owner => owner.number.replace('+', '') + '@s.whatsapp.net');
-
-    // Envoyer un message de réponse qui référence les vCards
-    await conn.sendMessage(from, {
-      text: `Voici les contacts des propriétaires :\n\n${owners.map(o => `📌 ${o.name} : ${o.number}`).join('\n')}`,
-      contextInfo: {
-        mentionedJid,
-        quotedMessageId: sentVCard.key.id
-      }
-    }, { quoted: mek });
-  } catch (error) {
-    console.error(error);
-    await conn.sendMessage(from, {
-      text: 'Désolé, il y a eu une erreur lors de la récupération des contacts des propriétaires.'
-    }, { quoted: mek });
-  }
+        reply(`An error occurred: ${error.message}`);
+    }
 });
