@@ -37,7 +37,7 @@
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-  <a href="https://github.com/XdTechPro/KHAN-MD/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=green&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork"><img title="NIMA-MD" src="https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork"></a>
 
 > Get Pair Code (Session ID)
 
