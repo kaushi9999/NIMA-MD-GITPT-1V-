@@ -6,7 +6,7 @@ cmd({
   on: 'body'
 }, async (conn, mek, m, { from, body }) => {
   try {
-    const jsonUrl = 'https://raw.githubusercontent.com/XdTechPro/KHAN-DATA/main/autosticker.json';
+    const jsonUrl = 'https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/blob/main/data/autosticker.json';
     const res = await axios.get(jsonUrl);
     const data = res.data;
 
