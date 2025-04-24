@@ -113,7 +113,7 @@ const port = process.env.PORT || 9090;
   console.log('Nima Md connected to whatsapp ✅')
   
   let up = `*HELLO THERE NIMA MD USER 📥! \ud83d\udc4b\ud83c\udffb* \n\n> SIMPLE BOT STRAIGHT , FORWARD BUT LOADED WITH NIMA MD 1V\ud83c\udf8a, POWERED BY IS LOKU NIMA\n\n *THANKS PRO NIMA MD 1V WHATSAPP BOT USING ❤️🙃\ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \https://whatsapp.com/channel/0029VazajdIIt5rrYdTBSc0P- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/Nimsara0000/NIMA-MD-GITPT-1V-\n\n> © POWERED BY LOKU NIMAH 🙃❤️ BY \ud83d\udda4`;
-    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/8r95u5.jpg` }, caption: up })
+    conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/60dfx8.jpg` }, caption: up })
   }
   })
   conn.ev.on('creds.update', saveCreds)
