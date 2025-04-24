@@ -6,7 +6,7 @@
 > **`Updated To` The Version 4.0**
 --- 
 
-<a><img src='https://files.catbox.moe/8r95u5.jpg'/></a>
+<a><img src='https://files.catbox.moe/209ivo.jpg'/></a>
 
 ---
 
