@@ -3,7 +3,7 @@
   
 ---  
 
-> **`Updated To` The Version 4.0**
+> **`Updated To` The Version 1.0**
 --- 
 
 <a><img src='https://files.catbox.moe/209ivo.jpg'/></a>
@@ -53,7 +53,7 @@ Start by forking this repository to your own GitHub account. Click the button be
 </p>  
 
 
-🚀 Deploy Nima-MD
+🚀 DIPLOY NIMA MD 1V
 
 > Deploy on Heroku
 
