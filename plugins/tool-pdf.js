@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { cmd } = require('../command');
 const PDFDocument = require('pdfkit');
 const { Buffer } = require('buffer');
@@ -29,7 +35,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 caption: `
 *📄 PDF created successully!*
 
-> © Created By JawadTechX 💜`
+> © Created By loku nima 💜`
             }, { quoted: mek });
         });
 
