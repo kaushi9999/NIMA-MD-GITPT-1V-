@@ -119,7 +119,7 @@ cmd({
         // Menu data (complete version)
         const menuData = {
             '1': {
-                title: "📥 *Download Menu* 📥",
+                title: "📥 *Nima Download Menu* 📥",
                 content: `╭━━━〔 *Download Menu* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ 🌐 *Social Media*
