@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const config = require('../config');
 const { cmd } = require('../command');
 const { ytsearch } = require('@dark-yasiya/yt-dl.js');
@@ -35,7 +41,7 @@ cmd({
 👀 *Views:* ${yts.views}
 👤 *Author:* ${yts.author.name}
 🔗 *Link:* ${yts.url}
-> Powered By JawadTechX ❤️`;
+> POWERED BY LOKU NIMAH 🙃❤️`;
 
         // Send video directly with caption
         await conn.sendMessage(
