@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 //const fetch = require("node-fetch");
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, sleep, fetchJson} = require('../lib/functions')
 const { cmd } = require("../command");
