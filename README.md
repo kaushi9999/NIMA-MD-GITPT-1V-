@@ -57,7 +57,7 @@ jobs:
 ```
 
 
- <p align="center"><img src="https://profile-counter.glitch.me/{KHAN-MD}/count.svg" alt="XdTechPro :: Visitor's Count" old_src="https://profile-counter.glitch.me/{XdTechPro}/count.svg" /></p>
+ <p align="center"><img src="https://profile-counter.glitch.me/{NIMA-MD}/count.svg" alt="XdTechPro :: Visitor's Count" old_src="https://profile-counter.glitch.me/{XdTechPro}/count.svg" /></p>
 
 
 <p align="center">
@@ -75,7 +75,7 @@ jobs:
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-   <a href="[https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork](https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork)"><img title="NIMA-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=green&style=for-the-badge&logo=stackshare"></a>
+   <a href="[https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork](https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork)"><img title="NIMA-MD" src="https://img.shields.io/badge/FORK-NIMA MD-h?color=green&style=for-the-badge&logo=stackshare"></a>
 
 
 > Get Pair Code (Session ID)
