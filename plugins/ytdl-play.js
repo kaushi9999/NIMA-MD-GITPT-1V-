@@ -34,11 +34,6 @@ cmd({
         // Use API to get audio
         const apiUrl = `https://api.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(videoUrl)}`;
         const response = await fetch(apiUrl);
-
-        if (!response.ok) {
-            return await reply("❌ Failed to fetch audio data from the API. Please check the URL or try again later.");
-        }
-
         const data = await response.json();
 
         if (!data.success) return await reply("❌ Failed to download audio!");
@@ -48,32 +43,23 @@ cmd({
         // For voice download, fetch voice separately (if available)
         const voiceApiUrl = `https://api.davidcyriltech.my.id/download/ytvoice?url=${encodeURIComponent(videoUrl)}`;
         const voiceResponse = await fetch(voiceApiUrl);
-
-        if (!voiceResponse.ok) {
-            console.error("Voice API failed with status:", voiceResponse.status);
-            return await reply("❌ Voice data not available or failed to fetch. Please try again later.");
-        }
-
         const voiceData = await voiceResponse.json();
 
-        if (!voiceData.success) {
-            console.error("Voice API failed with message:", voiceData.message);
-            return await reply("❌ Voice data not found for this video.");
-        }
+        if (!voiceData.success) return await reply("❌ Failed to download voice!");
 
         const voiceUrl = voiceData.result.download_url;
 
-        // Send both audio and voice to the user
+        // Send both audio and voice to the user in PTT format
         await conn.sendMessage(from, {
             audio: { url: audioUrl },
             mimetype: 'audio/mpeg',
-            ptt: false
+            ptt: true // Send in PTT format
         }, { quoted: mek });
 
         await conn.sendMessage(from, {
             audio: { url: voiceUrl },
             mimetype: 'audio/mpeg',
-            ptt: false
+            ptt: true // Send in PTT format
         }, { quoted: mek });
 
         await reply(`✅ *${title}* audio and voice downloaded successfully!`);
