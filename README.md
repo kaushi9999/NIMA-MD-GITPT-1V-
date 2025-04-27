@@ -2,6 +2,15 @@
   <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=FF0000&center=true&width=1000&height=200&lines=NIMA-MD-V1.0" alt="Typing SVG" />
 </a>
 
+<style>
+  img {
+    background: linear-gradient(45deg, #FF0000, #00FF00, #0000FF); /* Red, Green, Blue mix */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Highlight text only with yellow */
+  }
+</style>
+
   
 ---  
 <h1>𝐍𝐈𝐌𝐀-𝐌𝐃-1𝐕 2025 </h1>
