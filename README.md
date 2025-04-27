@@ -87,8 +87,8 @@ jobs:
 [![FORK NIMA MD-V4](https://img.shields.io/badge/FORK%20-NIMA%20MD%20V1-white)](https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork)
 
 
-           <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=00008B&center=true&vCenter=true&multiline=false&lines=NIMA+-+MD+-+V1+WHATSAPP+BOT`" alt="">
+<p align="center">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=00008B&center=true&vCenter=true&multiline=false&lines=NIMA+-+MD+-+V1+WHATSAPP+BOT" alt="">
 
 
 
