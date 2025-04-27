@@ -78,13 +78,13 @@ Start by forking this repository to your own GitHub account. Click the button be
    <a href="[https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork](https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork)"><img title="NIMA-MD" src="https://img.shields.io/badge/FORK-NIMA MD-h?color=green&style=for-the-badge&logo=stackshare"></a>
 
 
-> Get Pair Code (Session ID)
+> Nima Pair Code 01 (Session ID)
 
 <p align="left">  
 <a href='https://nima-web-pair-2-3.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-000000?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
 </p>  
 
-> Get Pair Code (Session ID)
+> Nima Pair Code 02 (Session ID)
 
 <p align="left">  
 <a href='https://nima-web-pair-2-3.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-ff0000?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
@@ -122,5 +122,5 @@ Start by forking this repository to your own GitHub account. Click the button be
 
 
 <p align="left">  
-<a href="https://whatsapp.com/channel/0029VatOy2EAzNc2WcShQw1j/1368" target="_blank"><img alt='View Workflow Codes' src='https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white'/></a>  
+<a href="https://whatsapp.com/channel/0029VazajdIIt5rrYdTBSc0P" target="_blank"><img alt='View Workflow Codes' src='https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white'/></a>  
 </p>  
