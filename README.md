@@ -21,9 +21,6 @@
 </div>
 
 
-<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F71515&width=435&lines=MY+NIMA+MD-+V1+DIPLOY-+THANKS" alt="Typing SVG" /></a>  
-
-
 ```
 name: Node.js CI
 
@@ -132,3 +129,7 @@ jobs:
 <p align="left">  
 <a href="https://whatsapp.com/channel/0029VazajdIIt5rrYdTBSc0P" target="_blank"><img alt='View Workflow Codes' src='https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white'/></a>  
 </p>  
+
+
+<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F71515&width=435&lines=MY+NIMA+MD-+V1+DIPLOY-+THANKS" alt="Typing SVG" /></a>  
+
