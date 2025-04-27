@@ -136,7 +136,7 @@ jobs:
 
 
  <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=F92C43F&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=NIMA-MD 1V;DIPLOY+-+YOU+-+POWERED BY;LOKU NIMAH;VOICE BY;ASHI THANKS;EDITAR BY;DILLA THANKS" alt="Typing SVG" /></a>
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=00008B&center=true&vCenter=true&multiline=false&lines=`NIMA+-+MD+-+V1+WHATSAPP+BOT`" alt="">
 
 
 
