@@ -1,7 +1,6 @@
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=FFFF00&highlight=0000FF&center=true&width=1000&height=200&lines=LOKU+NIMA+MD+1V" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=008000&highlight=FFFF00&center=true&width=1000&height=200&lines=LOKU+NIMA+MD+1V" alt="Typing SVG" />
 </a>
-
 
 ---  
 <h1>𝐍𝐈𝐌𝐀-𝐌𝐃-1𝐕 2025 </h1>
