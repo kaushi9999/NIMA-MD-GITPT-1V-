@@ -87,6 +87,12 @@ jobs:
 [![FORK NIMA MD-V4](https://img.shields.io/badge/FORK%20-NIMA%20MD%20V1-white)](https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/fork)
 
 
+           <p align="center">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=00008B&center=true&vCenter=true&multiline=false&lines=NIMA+-+MD+-+V1+WHATSAPP+BOT`" alt="">
+
+
+
+
 > Nima Pair Code 01 (Session ID)
 
 <p align="left">  
@@ -133,11 +139,6 @@ jobs:
 <p align="left">  
 <a href="https://whatsapp.com/channel/0029VazajdIIt5rrYdTBSc0P" target="_blank"><img alt='View Workflow Codes' src='https://img.shields.io/badge/View-Workflow%20Codes-FF0076?style=for-the-badge&logo=githubactions&logoColor=white'/></a>  
 </p>  
-
-
- <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=00008B&center=true&vCenter=true&multiline=false&lines=`NIMA+-+MD+-+V1+WHATSAPP+BOT`" alt="">
-
 
 
 <img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F71515&width=435&lines=MY+NIMA+MD-+V1+DIPLOY-+THANKS" alt="Typing SVG" /></a>  
