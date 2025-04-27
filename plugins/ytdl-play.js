@@ -34,18 +34,32 @@ cmd({
         // Use API to get audio
         const apiUrl = `https://api.davidcyriltech.my.id/download/ytmp3?url=${encodeURIComponent(videoUrl)}`;
         const response = await fetch(apiUrl);
+
+        if (!response.ok) {
+            return await reply(`❌ Failed to fetch audio from the API. Status: ${response.status}`);
+        }
+
         const data = await response.json();
 
-        if (!data.success) return await reply("❌ Failed to download audio!");
+        if (!data.success) {
+            return await reply(`❌ API failed to download audio. Message: ${data.message || "Unknown error"}`);
+        }
 
         const audioUrl = data.result.download_url;
 
         // For voice download, fetch voice separately (if available)
         const voiceApiUrl = `https://api.davidcyriltech.my.id/download/ytvoice?url=${encodeURIComponent(videoUrl)}`;
         const voiceResponse = await fetch(voiceApiUrl);
+
+        if (!voiceResponse.ok) {
+            return await reply(`❌ Failed to fetch voice from the API. Status: ${voiceResponse.status}`);
+        }
+
         const voiceData = await voiceResponse.json();
 
-        if (!voiceData.success) return await reply("❌ Failed to download voice!");
+        if (!voiceData.success) {
+            return await reply(`❌ API failed to download voice. Message: ${voiceData.message || "Unknown error"}`);
+        }
 
         const voiceUrl = voiceData.result.download_url;
 
