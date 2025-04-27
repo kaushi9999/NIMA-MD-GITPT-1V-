@@ -12,7 +12,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/XdTechPro"><img title="Developer" src="https://img.shields.io/badge/Author-Jawad%20TechX-FF7604.svg?style=big-square&logo=github" /></a>
+  <a href="https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-"><img title="Developer" src="https://img.shields.io/badge/Author-NIMA%20MR-FF7604.svg?style=big-square&logo=github" /></a>
 </p>
 
 <div align="center">
