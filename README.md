@@ -2,8 +2,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=FF0000&center=true&width=1000&height=200&lines=NIMA-MD-V1.0" alt="Typing SVG" />
 </a>
 
-<style>
-  img {
+<style> img {
     background: linear-gradient(45deg, #FF0000, #00FF00, #0000FF); /* Red, Green, Blue mix */
     -webkit-background-clip: text;
     color: transparent;
