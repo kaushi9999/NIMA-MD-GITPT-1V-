@@ -21,6 +21,10 @@
 </div>
 
 
+<a href="https://youtube.com/@nimayt-i7y?si=O3cTUf2xsfUyTfYX"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ʏᴏᴜᴛᴜʙᴇ%20ᴄʜᴀɴɴᴇʟ-blue" alt="🔰 ᴊᴏɪɴ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
+
+
+
 ```
 name: Node.js CI
 
