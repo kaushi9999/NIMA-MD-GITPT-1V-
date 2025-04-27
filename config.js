@@ -39,7 +39,7 @@ OWNER_NAME: process.env.OWNER_NAME || "LOKU NIMA",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© POWERED BY LOKU NIMAH🔄*",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/8r95u5.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/60dfx8.jpg",
 // add img for alive msg
 LIVE_MSG: process.env.LIVE_MSG || "> YES AIM NIMA MD ALIVE*LOKU NIMA-MD*⚡",
 // add alive msg here 
