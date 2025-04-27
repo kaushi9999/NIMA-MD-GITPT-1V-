@@ -2,8 +2,9 @@
   </p>
   
 ---  
-
-> **`Updated To` The Version 1.0**
+<h1>𝐍𝐈𝐌𝐀-𝐌𝐃-1𝐕</h1>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 --- 
 
 <a><img src='https://files.catbox.moe/209ivo.jpg'/></a>
