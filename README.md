@@ -1,5 +1,5 @@
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=0000FF&center=true&width=1000&height=200&lines=%E0%B6%B8%E0%B7%99%E0%B6%BA+%E0%B6%B1%E0%B7%92%E0%B6%BA%E0%B7%8F%E0%B6%9C%E0%B7%9A+%E0%B6%85%E0%B6%AF%E0%B7%8F%E0%B7%80%E0%B7%92%E0%B6%BA" alt="Typing SVG" style="max-width: 100%; height: auto;" />
+  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=0000FF&center=true&width=1000&height=200&lines=𝐋𝐎𝐊𝐔+𝐍𝐈𝐌𝐀+𝐌𝐃+1𝐕" alt="Typing SVG" style="max-width: 100%; height: auto;" />
 </a>
 
   
