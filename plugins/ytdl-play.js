@@ -20,6 +20,7 @@ cmd({
         if (q.match(/(youtube\.com|youtu\.be)/)) {
             videoUrl = q;
             const videoInfo = await yts({ videoId: q.split(/[=/]/).pop() });
+            if (!videoInfo || !videoInfo.title) return await reply("❌ Video not found!");
             title = videoInfo.title;
         } else {
             // Search YouTube
@@ -36,7 +37,10 @@ cmd({
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        if (!data.success) return await reply("❌ Failed to download audio!");
+        if (!data || !data.success) {
+            console.error("API error:", data);
+            return await reply("❌ Failed to download audio! Please try again later.");
+        }
 
         const audioUrl = data.result.download_url;
 
@@ -45,44 +49,30 @@ cmd({
         const voiceResponse = await fetch(voiceApiUrl);
         const voiceData = await voiceResponse.json();
 
-        if (!voiceData.success) return await reply("❌ Failed to download voice!");
+        if (!voiceData || !voiceData.success) {
+            console.error("Voice API error:", voiceData);
+            return await reply("❌ Failed to download voice! Please try again later.");
+        }
 
         const voiceUrl = voiceData.result.download_url;
 
-        // Send audio and voice as PTT if requested by the user
-        const isPTT = false;  // set this flag based on user input for PTT preference (e.g., if a special command is provided)
-        if (isPTT) {
-            // Send as PTT (Push-to-Talk)
-            await conn.sendMessage(from, {
-                audio: { url: audioUrl },
-                mimetype: 'audio/mpeg',
-                ptt: true
-            }, { quoted: mek });
+        // Send both audio and voice to the user
+        await conn.sendMessage(from, {
+            audio: { url: audioUrl },
+            mimetype: 'audio/mpeg',
+            ptt: false
+        }, { quoted: mek });
 
-            await conn.sendMessage(from, {
-                audio: { url: voiceUrl },
-                mimetype: 'audio/mpeg',
-                ptt: true
-            }, { quoted: mek });
-        } else {
-            // Send as normal audio
-            await conn.sendMessage(from, {
-                audio: { url: audioUrl },
-                mimetype: 'audio/mpeg',
-                ptt: false
-            }, { quoted: mek });
-
-            await conn.sendMessage(from, {
-                audio: { url: voiceUrl },
-                mimetype: 'audio/mpeg',
-                ptt: false
-            }, { quoted: mek });
-        }
+        await conn.sendMessage(from, {
+            audio: { url: voiceUrl },
+            mimetype: 'audio/mpeg',
+            ptt: false
+        }, { quoted: mek });
 
         await reply(`✅ *${title}* audio and voice downloaded successfully!`);
 
     } catch (error) {
-        console.error(error);
+        console.error("Error during execution:", error);
         await reply(`❌ Error: ${error.message}`);
     }
 });
