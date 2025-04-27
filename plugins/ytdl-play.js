@@ -36,7 +36,7 @@ cmd({
         const response = await fetch(apiUrl);
 
         if (!response.ok) {
-            return await reply("❌ Failed to fetch data from the API. Please check the URL or try again later.");
+            return await reply("❌ Failed to fetch audio data from the API. Please check the URL or try again later.");
         }
 
         const data = await response.json();
@@ -50,12 +50,16 @@ cmd({
         const voiceResponse = await fetch(voiceApiUrl);
 
         if (!voiceResponse.ok) {
-            return await reply("❌ Failed to fetch voice data from the API. Please check the URL or try again later.");
+            console.error("Voice API failed with status:", voiceResponse.status);
+            return await reply("❌ Voice data not available or failed to fetch. Please try again later.");
         }
 
         const voiceData = await voiceResponse.json();
 
-        if (!voiceData.success) return await reply("❌ Failed to download voice!");
+        if (!voiceData.success) {
+            console.error("Voice API failed with message:", voiceData.message);
+            return await reply("❌ Voice data not found for this video.");
+        }
 
         const voiceUrl = voiceData.result.download_url;
 
