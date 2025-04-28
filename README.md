@@ -109,7 +109,7 @@ jobs:
 </p>  
 
 
-🚀 DIPLOY NIMA MD 1V
+🚀 DIPLOY NIMA MD 1V          <img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=POWERED+BY+2025" alt="Typing SVG" />
 
 > Deploy on Heroku
 
