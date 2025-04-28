@@ -149,6 +149,5 @@ jobs:
 <img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=0&color=00008B&width=435&lines=BOT+OWNER+CONTACT+%2B94760743488" alt="Typing SVG" />
 
 
+<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=,NIMA+MARA+KERIYEK+NEDA" alt="Typing SVG" />
 
-
-<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=%E0%B6%91%E0%B6%BB+%E0%B6%85%E0%B6%9F%E0%B7%92%E0%B6%B1+%E0%B7%83%E0%B7%92%E0%B6%AF%E0%B7%94+%E0%B7%80%E0%B6%9C+%E0%B6%9A%E0%B6%BA%E0%B6%AB%E0%B7%94+%E0%B6%B1%E0%B7%9C%E0%B6%BD%E0%B6%B6%E0%B7%9A" alt="Typing SVG" />
