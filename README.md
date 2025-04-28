@@ -1,3 +1,4 @@
+
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=100&pause=1000&color=008000&highlight=FFFF00&center=true&width=1000&height=200&lines=LOKU+NIMA+MD+1V" alt="Typing SVG" />
 </a>
@@ -145,8 +146,7 @@ jobs:
 
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=F92C43&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=NIMA-MD+1V;DIPLOY+-+YOU+-+POWERED+BY;LOKU+NIMAH;VOICE+BY;ASHI+THANKS;EDITAR+BY;DILLA+THANKS;MY+PROJECT;MY+FULL+HELP;MR+DINESH+THANKS;LOGOS+BY+USHAN+THANKS" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=00FF00&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=NIMA-MD+1V;DIPLOY+-+YOU+-+POWERED+BY;LOKU+NIMAH;VOICE+BY;ASHI+THANKS;EDITAR+BY;DILLA+THANKS;MY+PROJECT;MY+FULL+HELP;MR+DINESH+THANKS;LOGOS+BY+USHAN+THANKS" alt="Typing SVG" /></a>
 </p>
-
 
 <img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=0&color=00008B&width=435&lines=BOT+OWNER+CONTACT+%2B94760743488" alt="Typing SVG" />
