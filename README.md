@@ -147,7 +147,3 @@ jobs:
 <img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=POWERED+BY+2025" alt="Typing SVG" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=0&color=00008B&width=435&lines=BOT+OWNER+CONTACT+%2B94760743488" alt="Typing SVG" />
-
-
-<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=VOICE+BY+TIK+TOK+ASHI" alt="Typing SVG" />
-
