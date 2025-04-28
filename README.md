@@ -62,6 +62,9 @@ jobs:
       run: npm start 
 ```
 
+<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=F71515&width=435&lines=MY+NIMA+MD-+V1+DIPLOY-+THANKS" alt="Typing SVG" /></a>  
+
+
 
  <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%"> </a>
   <a href="undefined"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/Instagram2.png" width="14%"> </a>
