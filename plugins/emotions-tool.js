@@ -351,4 +351,4 @@ async (conn, mek, m, { from, reply }) => {
     }
 });
 
-// > JawadTechX 
+// > NIMA MD
