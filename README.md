@@ -23,6 +23,11 @@
 </div>
 
 
+
+<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=රිලීස්+NIMA+MD-+V1+DIPLOY-+THANKS" alt="Typing SVG" />
+
+
+
 <a href="https://youtube.com/@nimayt-i7y?si=O3cTUf2xsfUyTfYX"><img src="https://img.shields.io/badge/%F0%9F%8E%89%20ᴊᴏɪɴ%20ᴏᴜʀ%20ʏᴏᴜᴛᴜʙᴇ%20ᴄʜᴀɴɴᴇʟ-blue" alt="🔰 ᴊᴏɪɴ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ғᴏʀ ᴜᴘᴅᴀᴛᴇ 🔰" width="300"></a>
 
 
