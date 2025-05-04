@@ -24,7 +24,7 @@
 
 
 
-<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=රිලීස්+NIMA+MD-+V1+DIPLOY-+THANKS" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Jersey+20+Charted&size=30&pause=1000&color=00FF00&width=435&lines=RELES+DAY+2025-+05+02-+DIPLOY" alt="Typing SVG" />
 
 
 
