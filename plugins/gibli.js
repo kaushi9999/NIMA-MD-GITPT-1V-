@@ -28,7 +28,7 @@ cmd({
     const res = await fetch("https://api.replicate.com/v1/predictions", {
       method: "POST",
       headers: {
-        Authorization: "r8_AnFKwnYFCLoIe54DjcdXV2YmRDEkO6R10BeAx", // <-- මෙතැන ඔබේ API Key එක දාන්න
+        Authorization: "https://n-y5or.onrender.com", // <-- මෙතැන ඔබේ API Key එක දාන්න
         "Content-Type": "application/json"
       },
       body: JSON.stringify(payload)
@@ -43,7 +43,7 @@ cmd({
     for (let i = 0; i < 10; i++) {
       const poll = await fetch(json.urls.get, {
         headers: {
-          Authorization: "r8_AnFKwnYFCLoIe54DjcdXV2YmRDEkO6R10BeAx"
+          Authorization: "https://n-y5or.onrender.com"
         }
       });
       const result = await poll.json();
