@@ -13,7 +13,7 @@ AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "true",
 // make true if you want auto reply on status 
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
-AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY NIMA-MD 🤍*",
+AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || ".𝗦𝗘𝗘𝗡 𝗬𝗢𝗨𝗥 𝗦𝗧𝗔𝗧𝗨𝗦 𝗕𝗬 𝗡𝗜𝗠𝗔 𝗠𝗗🔄",
 // set the auto reply massage on status reply  
 ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
@@ -41,7 +41,7 @@ DESCRIPTION: process.env.DESCRIPTION || "*© POWERED BY LOKU NIMAH🔄*",
 // add bot owner name    
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/60dfx8.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> YES AIM NIMA MD ALIVE*LOKU NIMA-MD*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> YES AIM NIMA MD ALIVE LOKU NIMA-MD*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
