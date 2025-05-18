@@ -4,7 +4,7 @@
   "description": "A WhatsApp Bot Created By Loku Nima",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name NIMA-MD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name KHAN-MD",
     "stop": "pm2 stop NIMA-MD",
     "restart": "pm2 restart NIMA-MD"
   },
