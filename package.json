@@ -4,50 +4,50 @@
   "description": "A WhatsApp Bot Created By Loku Nima",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name KHAN-MD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name NIMA-MD",
     "stop": "pm2 stop NIMA-MD",
     "restart": "pm2 restart NIMA-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12", // Retained as no newer version confirmed
-    "@adiwajshing/keyed-db": "^0.2.4", // Latest version as of npm registry
-    "@dark-yasiya/yt-dl.js": "1.0.5", // Retained; custom package, no newer version confirmed
-    "@ffmpeg-installer/ffmpeg": "^1.1.0", // Latest version
-    "@vitalets/google-translate-api": "^9.2.0", // Latest version
-    "@dark-yasiya/scrap": "1.0.1", // Retained; custom package, no newer version confirmed
-    "pino": "^9.4.0", // Updated to latest
-    "pm2": "^6.0.5", // Latest version
-    "util": "^0.12.5", // Updated to latest
-    "express": "^4.21.0", // Resolved "latest" to current latest
-    "axios": "^1.7.7", // Updated to latest
-    "crypto-digest-sync": "^1.0.0", // Latest version
-    "crypto-js": "^4.2.0", // Resolved "latest" to current latest
-    "file_size_url": "1.0.4", // Latest version
-    "fs-extra": "^11.2.0", // Updated to latest
-    "fs": "^0.0.1-security", // Latest version (security-focused package)
-    "ffmpeg": "^0.0.4", // Latest version
-    "file-type": "^19.5.0", // Updated to latest
-    "fluent-ffmpeg": "^2.1.3", // Updated to latest
-    "form-data": "^4.0.0", // Latest version
-    "google-tts-api": "^2.0.2", // Latest version
-    "path": "^0.12.7", // Latest version (single entry)
-    "node-fetch": "^3.3.2", // Updated to latest (node-fetch v3)
-    "btch-downloader": "^2.2.9", // Latest version
-    "megajs": "^1.1.3", // Updated to latest
-    "pdfkit": "^0.15.0", // Updated to latest
-    "wa_set_pkg": "1.0.5", // Latest version
-    "wa-sticker-formatter": "^4.4.4", // Latest version
-    "vm": "^0.1.0", // Latest version (single entry)
-    "adm-zip": "^0.5.16", // Latest version
-    "cheerio": "^1.0.0", // Updated to latest
-    "ruhend-scraper": "8.0.3", // Latest version
-    "qrcode-terminal": "^0.12.0", // Latest version
-    "yt-search": "^2.12.1", // Updated to latest
-    "sequelize": "^6.37.5", // Latest version
-    "sqlite3": "^5.1.7", // Latest version
-    "api-dylux": "1.8.5", // Latest version
-    "@mrnima/tiktok-downloader": "1.0.0", // Latest version
-    "@mrnima/facebook-downloader": "1.0.0", // Latest version
-    "mrnima-moviedl": "1.0.0" // Latest version
+    "@whiskeysockets/baileys": "npm:@fizzxydev/baileys-pro@8.5.12",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "@dark-yasiya/yt-dl.js": "1.0.5",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@vitalets/google-translate-api": "^9.2.0",
+    "@dark-yasiya/scrap": "1.0.1",
+    "pino": "^9.4.0",
+    "pm2": "^6.0.5",
+    "util": "^0.12.5",
+    "express": "^4.21.0",
+    "axios": "^1.7.7",
+    "crypto-digest-sync": "^1.0.0",
+    "crypto-js": "^4.2.0",
+    "file_size_url": "1.0.4",
+    "fs-extra": "^11.2.0",
+    "fs": "^0.0.1-security",
+    "ffmpeg": "^0.0.4",
+    "file-type": "^19.5.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.0",
+    "google-tts-api": "^2.0.2",
+    "path": "^0.12.7",
+    "node-fetch": "^3.3.2",
+    "btch-downloader": "^2.2.9",
+    "megajs": "^1.1.3",
+    "pdfkit": "^0.15.0",
+    "wa_set_pkg": "1.0.5",
+    "wa-sticker-formatter": "^4.4.4",
+    "vm": "^0.1.0",
+    "adm-zip": "^0.5.16",
+    "cheerio": "^1.0.0",
+    "ruhend-scraper": "8.0.3",
+    "qrcode-terminal": "^0.12.0",
+    "yt-search": "^2.12.1",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
+    "api-dylux": "1.8.5",
+    "@mrnima/tiktok-downloader": "1.0.0",
+    "@mrnima/facebook-downloader": "1.0.0",
+    "mrnima-moviedl": "1.0.0"
   }
   }
