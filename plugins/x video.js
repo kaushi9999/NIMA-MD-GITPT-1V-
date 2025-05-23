@@ -7,7 +7,6 @@ const { fetchJson, getBuffer } = require('../lib/functions');
 
 cmd({
     pattern: "xnxx",
-    alias: ["sex","xxx","x video"],
     desc: "Downloads a video from XNXX",
     use: '.xnxx <search_term>',
     react: "📥",
