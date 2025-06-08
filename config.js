@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "NIMA-MD&tf1QCARI#hkke8Tma4fcYKpbWd10TazdmzS1sCh6-BeS6cY5WE",
+SESSION_ID: process.env.SESSION_ID || "ඔයාගෙ session id එක දාන්න මෙතෙන්ට",
 // add your Session Id 
 AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
@@ -19,7 +19,7 @@ ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
 MENTION_REPLY: process.env.MENTION_REPLY || "true",
 // make true if want auto voice reply if someone menetion you 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/70paf7.jpeg",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/tams7i.jpg",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
@@ -41,7 +41,7 @@ DESCRIPTION: process.env.DESCRIPTION || "*© POWERED BY LOKU NIMAH🔄*",
 // add bot owner name    
 ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/60dfx8.jpg",
 // add img for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> YES AIM NIMA MD ALIVE LOKU NIMA-MD*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> *YES AIM NIMA MD ALIVE LOKU NIMA-MD*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
